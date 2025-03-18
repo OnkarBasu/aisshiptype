@@ -10,18 +10,18 @@ import pickle
 import numpy as np
 
 # Load the trained model
-with open("C:/Users/abasu/OneDrive/Desktop/AIS_shiptype/ship_type_model.pkl", "rb") as model_file:
+with open("ship_type_model.pkl", "rb") as model_file:
     model = pickle.load(model_file)
 
 # Load the scaler
-with open("C:/Users/abasu/OneDrive/Desktop/AIS_shiptype/scaler.pkl", "rb") as scaler_file:
+with open("scaler.pkl", "rb") as scaler_file:
     scaler = pickle.load(scaler_file)
 
 # Load the label encoders
-with open("C:/Users/abasu/OneDrive/Desktop/AIS_shiptype/ship_type_label_encoder.pkl", "rb") as label_encoder_file:
+with open("ship_type_label_encoder.pkl", "rb") as label_encoder_file:
     ship_type_label_encoder = pickle.load(label_encoder_file)
 
-with open("C:/Users/abasu/OneDrive/Desktop/AIS_shiptype/label_encoders (1).pkl", "rb") as encoders_file:
+with open("label_encoders (1).pkl", "rb") as encoders_file:
     label_encoders = pickle.load(encoders_file)
 
 # Define the list of input features (same as in training)
